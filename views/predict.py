@@ -25,7 +25,7 @@ def show_predict() -> None:
         height=150
     )
 
-    if st.button("🔮 Analyze Symptoms", type="primary", use_container_width=True):
+    if st.button("🔮 Analyze Symptoms", type="primary", width="stretch"):
         if not symptoms_text or len(symptoms_text.strip()) < 5:
             st.error("Please provide a more detailed description of your symptoms to analyze.")
             return
