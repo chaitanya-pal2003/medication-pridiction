@@ -18,8 +18,8 @@ DB_CONFIG = {
     "auth_plugin":  "mysql_native_password"  # Added to bypass caching_sha2_password error
 }
 
-# ─── Google Gemini API ────────────────────────────────────────────────────────
-GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+# ─── OpenAI API ────────────────────────────────────────────────────────
+OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
 
 # ─── App Meta ─────────────────────────────────────────────────────────────────
 APP_TITLE       = "MedPredict AI"

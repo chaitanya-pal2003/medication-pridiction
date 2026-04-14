@@ -5,7 +5,7 @@ Dynamic Prediction module using Gemini AI for symptom analysis.
 import streamlit as st
 import json
 from db_connector import get_connection
-from ai.gemini_advisor import analyze_symptoms_with_ai
+from ai.openai_advisor import analyze_symptoms_with_ai
 
 def show_predict() -> None:
     st.markdown("""
@@ -30,7 +30,7 @@ def show_predict() -> None:
             st.error("Please provide a more detailed description of your symptoms to analyze.")
             return
 
-        with st.spinner("Analyzing symptoms using Google Gemini AI..."):
+        with st.spinner("Analyzing symptoms using OpenAI..."):
             
             # Call AI function
             ai_result = analyze_symptoms_with_ai(symptoms_text)
