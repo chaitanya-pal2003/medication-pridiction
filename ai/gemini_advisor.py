@@ -32,7 +32,7 @@ Keep the tone warm and supportive. Use simple language."""
         client = genai.Client(api_key=GEMINI_API_KEY)
         # We use generate_content_stream to get the typing effect!
         response = client.models.generate_content_stream(
-            model="gemini-2.0-flash",
+            model="gemini-1.5-flash",
             contents=prompt,
         )
         for chunk in response:
@@ -70,7 +70,7 @@ JSON format:
     try:
         client = genai.Client(api_key=GEMINI_API_KEY)
         response = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-1.5-flash",
             contents=prompt,
         )
         
